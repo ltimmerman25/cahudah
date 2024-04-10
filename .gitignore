@@ -1,5 +1,6 @@
-# Environments
+# Folders
 .venv/
 .idea/
+dev/
 
 # files
