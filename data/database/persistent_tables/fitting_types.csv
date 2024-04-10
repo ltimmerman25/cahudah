@@ -1,0 +1,14 @@
+﻿fitting_type|num_connections|fill_volume_eq_type|fill_volume_eq_input|exponential_eq_coef|exponential_eq_exp
+coupling|2|exponential|diameter_average|1.126|1.585
+tee|3|exponential|diameter_average|2.6923|1.5336
+elbow_45|2|exponential|diameter_average|1.422|1.5986
+elbow_90|2|exponential|diameter_average|3.7074|1.3769
+tube|2||||
+cap|1|exponential|diameter_average|0.75|1.585
+union|2|exponential|diameter_average|1.25|1.585
+valve_ball|2|exponential|diameter_average|2.5|1.5336
+valve_check|2|exponential|diameter_average|1.25|1.585
+valve_schrader|2|exponential|diameter_average|1.126|1.585
+valve_arrester|1||||
+flange|2||||
+clamp|0||||
