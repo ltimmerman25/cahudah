@@ -6,7 +6,16 @@ def get_project_root() -> str:
     return str(Path(__file__).parent.parent)
 
 
-def yes_no_input(prompt: str = '', yes_list: List[str] = ['y'], no_list: List[str] = ['n'], strip_input: bool = False) -> bool:
+def enter_prompt(prompt: str = ''):
+    """ Prompts the user with the given prompt and waits to proceed until the user hits 'Enter'
+
+    Args:
+        prompt (str): What prompt to give the user. Default ''
+    """
+    input(prompt)
+
+def yes_no_prompt(prompt: str = '', yes_list: List[str] = ['y'], no_list: List[str] = ['n'],
+                  strip_input: bool = False) -> bool:
     """ Prompts the user for a response returns true or false depending on user input. If input does not match anything
     in yes_list or no_list, prompt the user again.
 
@@ -36,7 +45,3 @@ def yes_no_input(prompt: str = '', yes_list: List[str] = ['y'], no_list: List[st
         return True
     else:
         return False
-
-
-
-print(yes_no_input("hiya: ", ['y', 'yer'], ['']))
