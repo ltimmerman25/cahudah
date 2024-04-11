@@ -47,11 +47,11 @@ def yes_no_prompt(prompt: str = '', yes_list: List[str] = ['y'], no_list: List[s
         return False
 
 
-def close_excel_file(excel_wb_filename: str, save_changes: bool | None = None):
+def close_excel_wb(excel_wb_filename: str, save_changes: bool | None = None):
     """ If the given file is open in Excel, this function opens the file in Excel and then closes the file.
 
     Args:
-        excel_filename (str): The abbreviated filename of this Excel file.
+        excel_wb_filename (str): The abbreviated filename of this Excel workbook.
             e.g. use 'export.xlsx', not 'C:\\export.xlsx'
         save_changes (bool): Optional. Whether to save the Excel file as we close it. Default to None so that Excel
             will prompt the user to manually decide to close the file or not.
@@ -69,4 +69,4 @@ def close_excel_file(excel_wb_filename: str, save_changes: bool | None = None):
                 curr_wb.Close(save_changes)
 
 
-close_excel_file('ExPort.xlsx', False)
+close_excel_wb('ExPort.xlsx', False)
