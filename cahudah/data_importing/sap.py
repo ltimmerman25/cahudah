@@ -105,12 +105,10 @@ def export_zvc09(sales_order: int, sales_line: int,
             # If this file does not exist yet, create a new file
             sap_session.findById('wnd[1]/tbar[0]/btn[0]').press()
 
-    except pywintypes.com_error:
+    except Exception:
         print('\nSAP GUI was accessed, but was not able to run zvc09.')
         print('Inspect the error code for more information.\n')
         raise
-
-
 
 
 export_zvc09(9076969,20)
